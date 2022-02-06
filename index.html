@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="script.js" defer></script>
+    <link href="style.css" rel="stylesheet">
+    <title>Hearty Hokies</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,500;0,700;1,400&display=swap" rel="stylesheet">
+  </head>
+
+  <body>
+
+    <!-- Navigation tabs -->
+    <ul class="tabs">
+     <a href="/index.html" class="active tab">Home</a>
+     <a href="/Breakfast.html" class="tab">Breakfast</a>
+     <a href="/Lunch+Dinner.html" class="tab">Lunch/Dinner</a>
+     <a href="/Dessert.html" class="tab">Dessert</a>
+     <a href="/Resources.html" class="tab">Resources</a>
+    </ul>
+    </ul>
+
+    <div class="gridtwo">
+      <headertwo style="background-color: #F1F0EB">
+      <div>
+
+        <!-- Home title and subtitle texts -->
+        <h1> Welcome to Hearty Hokies! </h1>
+        <p style="text-align: center; font-size: 20px; max-width: 900px"> Our desktop website is dedicated to improving the health of the Virginia Tech campus community by promoting nutrition resources and delicious, dorm-friendly recipes! </p>
+      </div>
+      </headertwo>
+
+      <navtwo>
+      <div>
+
+        <!-- About us and description -->
+        <h3> About Us & Our Mission </h3>
+        <p style="text-align: left; font-size: 17px; max-width: 900px"> As VT freshman, we know adapting to college life can be hard. Even with all our food options, making food decisions can be difficult, so <mark>we've complied a few of our favorite meals to make (no fuss recipes!)</mark> for you to take inspiration from.</p>
+      </div>
+      </navtwo>
+
+      <articletwo>
+      <div>
+
+        <!-- Vegetarian and Vegan options -->
+        <p style="font-size: 20px; max-width: 900px"> Want to know about vegetarian and vegan options here at Virginia Tech? <br> </br>
+        Check out our <b>resources tab</b> for tips and recipes from other HokieVegetarians & HokieVegans. Stay hearty hokies!</p>
+      </div>
+      </articletwo>
+
+      <asidetwo>
+      <div>
+
+        <!-- How to contact us -->
+        <h3 style = "max-width: 300px; text-align: left; margin-left: 30px" > We would love to hear from you guys! </h3>
+        <p style = "max-width: 300px; margin-left: 30px"> Send us recipes you love and any resources you would like to share. </p> <br>
+        <a href="mailto:anniettran@vt.edu" style="margin-left: 110px; background-color: #D79922; font-size: 18px; font-family: Poppins, sans-serif; font-weight: bold; text-decoration: none; padding: 14px 20px; color: #ffffff; border-radius: 5px; display: inline-block; mso-padding-alt: 0;">
+        <span style="mso-text-raise: 15pt;">Email Us  &rarr;</span>
+        </a>
+      </div>
+      </asidetwo>
+
+      <footertwo>
+      <div>
+      
+        <!-- Search bar description and code -->
+        <p style="font-size:20px; max-width: 1000px; text-align: center">If you prefer to eat with Virginia Tech's dining services, <b>search food items here to learn more about VT Dining's nutritional information:</b></p>
+        <p style="font-size:20px; max-width: 1000px; text-align: center">(Example: Chicken Tenders)</p> 
+    
+        <head>
+          <link href="style2.css" rel="stylesheet">
+        </head>
+
+        <body>
+          <form style="margin-left: 380px" role="search" id="form">
+            <input type="search" id="query" name="q"
+            placeholder="Search..."
+            aria-label="Search through site content">
+            <button>
+              <svg viewBox="0 0 1024 1024"><path class="path1" d="M848.471 928l-263.059-263.059c-48.941 36.706-110.118 55.059-177.412 55.059-171.294 0-312-140.706-312-312s140.706-312 312-312c171.294 0 312 140.706 312 312 0 67.294-24.471 128.471-55.059 177.412l263.059 263.059-79.529 79.529zM189.623 408.078c0 121.364 97.091 218.455 218.455 218.455s218.455-97.091 218.455-218.455c0-121.364-103.159-218.455-218.455-218.455-121.364 0-218.455 97.091-218.455 218.455z"></path></svg>
+            </button>
+          </form>
+    
+          <script>
+            const f = document.getElementById('form');
+            const q = document.getElementById('query');
+            const google = 'https://www.google.com/search?q=site%3A+';
+            const site = 'http://foodpro.dsa.vt.edu/menus';
+
+            function submitted(event) {
+            event.preventDefault();
+            const url = google + site + '+' + q.value;
+            const win = window.open(url, '_blank');
+            win.focus();
+            }
+
+            f.addEventListener('submit', submitted);
+          </script>
+        </body>
+      </div>
+    </footertwo>
+    <p>
+    Made by Hearty Hokies&#129505
+  </body>
+</html>
+
+
+
+
+

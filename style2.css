@@ -1,0 +1,40 @@
+form {
+ background-color: #D79922;
+ width: 300px;
+ height: 44px;
+ border-radius: 5px;
+ display: flex;
+ flex-direction: row;
+ align-items: center;
+ font-family: 'Poppins', sans-serif;
+}
+ 
+input {
+ all: unset;
+ font: 16px system-ui;
+ color:white;
+ height: 100%;
+ width: 100%;
+ padding: 6px 10px;
+ font-family: 'Poppins', sans-serif;
+}
+ 
+::placeholder {
+ color: white;
+ opacity: 0.8;
+}
+ 
+button {
+ all: unset;
+ cursor: pointer;
+ width: 44px;
+ height: 44px;
+}
+ 
+svg {
+ color: white;
+ fill: currentColor;
+ width: 24px;
+ height: 24px;
+ padding: 10px;
+}
